@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="box_plane">
+
+  <link name="plane_link">
+    <visual>
+      <geometry>
+        <box size="10 10 0.02"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="10 10 0.02"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0"/>
+      <inertia
+        ixx="0" ixy="0" ixz="0"
+        iyy="0" iyz="0"
+        izz="0"/>
+    </inertial>
+  </link>
+
+</robot>
